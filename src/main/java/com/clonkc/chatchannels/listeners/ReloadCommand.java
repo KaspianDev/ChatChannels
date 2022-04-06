@@ -1,8 +1,8 @@
 package com.clonkc.chatchannels.listeners;
 
-import com.clonkc.chatchannels.utility.Replace;
 import com.clonkc.chatchannels.ChatChannels;
 import com.clonkc.chatchannels.Configuration;
+import com.clonkc.chatchannels.utility.Replace;
 import org.bukkit.command.CommandSender;
 import redempt.redlib.commandmanager.CommandHook;
 

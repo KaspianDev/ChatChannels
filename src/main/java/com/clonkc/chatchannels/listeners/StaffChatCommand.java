@@ -11,6 +11,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import redempt.redlib.commandmanager.CommandHook;
 
+
 public class StaffChatCommand {
     private final ChatChannels plugin;
 

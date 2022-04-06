@@ -1,5 +1,5 @@
 name: ChatChannels
-version: '${project.version}'
+version: 1.5.4
 main: com.clonkc.chatchannels.ChatChannels
 api-version: 1.18
 prefix: ChatChannels

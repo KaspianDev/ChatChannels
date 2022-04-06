@@ -72,7 +72,7 @@ public final class ChatChannels extends JavaPlugin {
     }
 
     public void registerCommands() {
-        ArgType<World> worldType = new ArgType<>("world", s -> Bukkit.getWorld(s))
+        ArgType<World> worldType = new ArgType<>("world", Bukkit::getWorld)
                 .tabStream(c -> Bukkit.getWorlds().stream().map(World::getName))
                 .constraint(s -> {
                     World.Environment env = World.Environment.valueOf(s.toUpperCase());

@@ -1,9 +1,9 @@
 package com.clonkc.chatchannels.listeners;
 
 import com.clonkc.chatchannels.Channels;
-import com.clonkc.chatchannels.utility.Replace;
 import com.clonkc.chatchannels.ChatChannels;
 import com.clonkc.chatchannels.Configuration;
+import com.clonkc.chatchannels.utility.Replace;
 import dev.dejvokep.boostedyaml.YamlDocument;
 import dev.dejvokep.boostedyaml.dvs.Pattern;
 import dev.dejvokep.boostedyaml.dvs.segment.Segment;
@@ -26,7 +26,6 @@ import java.util.Objects;
 public class ToggleChannel {
 
     private final ChatChannels plugin;
-
     public ToggleChannel(ChatChannels plugin) {
         this.plugin = plugin;
     }

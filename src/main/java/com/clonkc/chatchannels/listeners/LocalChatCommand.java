@@ -5,10 +5,8 @@ import com.clonkc.chatchannels.Configuration;
 import com.clonkc.chatchannels.utility.MathUtils;
 import com.clonkc.chatchannels.utility.Replace;
 import com.clonkc.chatchannels.utility.SenderConverter;
-import com.sun.tools.javac.Main;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import redempt.redlib.commandmanager.CommandHook;
 

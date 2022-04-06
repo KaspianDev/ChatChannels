@@ -3,8 +3,9 @@ package com.clonkc.chatchannels.listeners;
 import com.clonkc.chatchannels.Channels;
 import com.clonkc.chatchannels.ChatChannels;
 import com.clonkc.chatchannels.Configuration;
-import com.clonkc.chatchannels.utility.*;
-import com.sun.tools.javac.Main;
+import com.clonkc.chatchannels.utility.LocationUtils;
+import com.clonkc.chatchannels.utility.MathUtils;
+import com.clonkc.chatchannels.utility.Replace;
 import dev.dejvokep.boostedyaml.YamlDocument;
 import dev.dejvokep.boostedyaml.dvs.Pattern;
 import dev.dejvokep.boostedyaml.dvs.segment.Segment;
@@ -14,7 +15,6 @@ import dev.dejvokep.boostedyaml.settings.loader.LoaderSettings;
 import dev.dejvokep.boostedyaml.settings.updater.UpdaterSettings;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -24,12 +24,13 @@ import org.bukkit.persistence.PersistentDataType;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public class ChatEventListener implements Listener {
 
     private final ChatChannels plugin;
-
     public ChatEventListener(ChatChannels plugin) {
         this.plugin = plugin;
     }
